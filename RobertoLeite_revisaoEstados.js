@@ -8,6 +8,7 @@ let vetest1 = []
 let vetsigla1 = []
 let vetarea1 = []
 let vetpop1 = []
+let densidade = []
 
 //Inserção de dados no vetor
 //push() -> adiciona novos elementos AO FINAL do vetor
@@ -17,11 +18,23 @@ vetsigla1.push('SE')
 vetarea1.push(21915.08)
 vetpop1.push(2278308)
 
-for (let n = 1; i < vetest.length; i++ )
-    let dens = function(n) {
-        return vetpop(n) / vetarea(n) 
-    }   
-    console.log(dens(n))
+console.log('Estado: ',vetest1)
+console.log('Sigla: ',vetsigla1)
+console.log('Área do Estado: ',vetarea1)
+console.log('População do Estado', vetpop1)
+
+console.log('----------------------------')
+
+
+for (let n = 0; n < vetest.length; n++) {
+
+    densidade[n] = vetpop[n] / vetarea[n]
+    console.log ('Estado: ',vetest[n], ' /  Densidade: ', densidade[n])
+ 
+
+    } 
+
+
 
 
 
